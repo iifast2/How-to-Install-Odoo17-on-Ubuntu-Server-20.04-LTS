@@ -339,6 +339,11 @@ Accessing Odoo: You can now access Odoo using your server's IP address: `http://
 Firewall Considerations: If you're accessing the server via SSH, make sure to allow SSH (port 22) through the firewall before enabling it to avoid locking yourself out of the server:
 
     sudo ufw allow ssh
+    sudo ufw allow 80
+    sudo ufw allow 8069
+    
+    sudo systemctl status apache2
+
 
 
 <br/><br/><br/>    
